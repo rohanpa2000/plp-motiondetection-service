@@ -26,7 +26,7 @@ public class MotionDetectionService {
 	@Consumes("application/json")
     public Response saveMotion(JsonObject motionJson) throws ParseException {
 		
-		System.out.println("Motion detected");
+		System.out.println("Motion detected production 1");
 		Incident motion =  Incident.getFromJsonText(motionJson.toString());
         
         motionBusiness.save(motion);
